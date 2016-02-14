@@ -1,1 +1,3 @@
 # eteater
+
+Võrguprogrammeerimise projekt
