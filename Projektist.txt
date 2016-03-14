@@ -1,0 +1,9 @@
+Elektriteatri näol on tegemist väikse arthouse kinoga Tartus. Kogu praegune kinotegevus ja ülal pidamine
+on peamiselt vabatahtlike poolt tehtud.
+
+Praegune elektriteatri koduleht asub aadressil http://elektriteater.ee/, aga see on ajale jalgu jäänud. Praegu
+ei ole piletimüügi süsteemis võimalik müüa kohtadega pileteid.
+
+Meie projekti eesmärk on luua kaasaegsema disaini ja mugavama disainiga leht. Lisaks on plaan teha internetis
+kohasüsteemiga (mis peaks reaalajas töötama, kui keegi broneerib koha, siis teistel ekraanidel on seda näha)
+piletimüügi süsteem.
