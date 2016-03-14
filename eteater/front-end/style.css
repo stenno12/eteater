@@ -1,0 +1,155 @@
+/*kogu lehekülg */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: #d3e0f7;
+}
+
+/*grid view */
+.col,
+.col {
+    box-sizing: border-box;
+}
+.rida::before,
+.rida::after {
+    content: " ";
+    display: table;
+}
+.rida{
+    max-width: 1200px;
+    margin:auto;
+}
+.rida::after {
+    clear: both;
+}
+.col {
+    position: relative;
+    float: left;
+}
+.col + .col {
+    margin-left: 1.6%;
+}
+.col1 {width: 6.86666666667%;}
+.col2 {width: 15.3333333333%;}
+.col3 {width: 23.8%;}
+.col4 {width: 32.2666666667%;}
+.col5 {width: 40.7333333333%;}
+.col6 {width: 49.2%;}
+.col7 {width: 57.6666666667%;}
+.col8 {width: 66.1333333333%;}
+.col9 {width: 74.6%;}
+.col10 {width: 83.0666666667%;}
+.col11 {width: 91.5333333333%;}
+.col12 {width: 100%;
+    margin-left: 0;}
+/*headeri info*/
+
+menu {
+    display: block;
+    margin: 0;
+    padding: 3.0em 5.0em;
+    background-image: url(header_back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #111;
+}
+#logo {
+    display: inline-block;
+    padding: 0 1.0em;
+    overflow: hidden;
+}
+#logo > a > img {
+    width: 150px;
+    height: auto;
+}
+
+
+ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 30px 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+    margin: 0;
+}
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0.85em 1.0em;
+    text-decoration: none;
+    font-size: 1.65em;
+}
+li a:hover:not(.active) {
+    background-color: #c72e45;
+}
+.active {
+    background-color: #181842;
+}
+#social_btn {
+    float: right;
+}
+
+
+/* sisu */
+
+h1 {
+    margin: 0.5em 0;
+}
+
+#fotokonteiner {
+    margin: auto;
+    position: relative;
+}
+
+.filmifoto {
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    width: 100%;
+    top:1%;
+    position: absolute;
+    direction:ltr;
+}
+
+h3 {
+    text-align: center;
+
+}
+
+#film {
+    position: relative;
+}
+
+span {
+    position:relative;
+}
+
+
+.pealkiri {
+    font-size: 1.2em;
+    margin: 1.0em;
+    padding: 0.5em;
+    display: inline-block;
+    background-color: #fff;
+}
