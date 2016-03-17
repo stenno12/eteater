@@ -1,11 +1,3 @@
-/*kogu lehekülg */
-* {
-    padding: 0;
-    margin: 0;
-}
-
-
-
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -13,48 +5,8 @@ html {
 }
 body {
     display: block;
-    margin: 0;
-    padding: 0;
     background-color: #fff;
 }
-
-/*grid view */
-.col,
-.col {
-    box-sizing: border-box;
-}
-.rida::before,
-.rida::after {
-    content: " ";
-    display: table;
-}
-.rida{
-    max-width: 1200px;
-    margin:auto;
-}
-.rida::after {
-    clear: both;
-}
-.col {
-    position: relative;
-    float: left;
-}
-.col + .col {
-    margin-left: 1.6%;
-}
-.col1 {width: 6.86666666667%;}
-.col2 {width: 15.3333333333%;}
-.col3 {width: 23.8%;}
-.col4 {width: 32.2666666667%;}
-.col5 {width: 40.7333333333%;}
-.col6 {width: 49.2%;}
-.col7 {width: 57.6666666667%;}
-.col8 {width: 66.1333333333%;}
-.col9 {width: 74.6%;}
-.col10 {width: 83.0666666667%;}
-.col11 {width: 91.5333333333%;}
-.col12 {width: 100%;
-    margin-left: 0;}
 /*headeri info*/
 
 menu {
@@ -66,12 +18,12 @@ menu {
     background-position: center;
     background-color: #111;
 }
-#logo {
+.logo {
     display: inline-block;
     padding: 0 1.0em;
     overflow: hidden;
 }
-#logo > a > img {
+.logo > a > img {
     width: 150px;
     height: auto;
 }
@@ -115,17 +67,18 @@ h1, h2, h3, h4 {
     font-family: 'Roboto Slab', serif;
 }
 h1 {
-    margin: 0.5em 0;
+    margin: 0.5em;
     font-size: 4em;
     line-height: 0.9em
 }
 .film {
-    margin: 5em 0;
+    margin: 1em 0;
+	float: left;
 }
 
 .filmifoto {
     position: relative;
-    max-height: 11.3em;
+	padding: 1em 0;
     max-width: 100%;
 }
 
@@ -152,9 +105,11 @@ h3.pildipealne{
 }
 
 p.pildipealne{
-    font-size: 0.8em;
-    margin: 0px 16px 16px 16px;
-    padding: 0em 0.3em 0.3em;
+	display: inline-block;
+    font-size: 0.9em;
+    margin: 0 16px;
+    padding: 0.3em 0.3em 0.3em;
+
 }
 
 
@@ -162,50 +117,57 @@ h4 {
     font-size: 1.4em;
     text-align: center
 }
-
-#kuup2evNr {
-    font-size: 4em;
-    line-height: 0.8em;
-}
-
-#kuup2ev {
-    text-align: center;
-}
-
-#kp2ev {
+.kp2ev {
     margin: 0;
-    padding: 0 1em 9.1874em;
+    padding: 0;
     max-width: 100%;
-    height: ;
     display: block;
 	position: relative;
 }
-
-
-
-#filmikirjeldus {
-    max-height: 12em;
+.filmikirjeldus {
     text-overflow: "...";
     margin-top: -0.3em;
+	padding: 1em;
     display:inline-block;
 }
 
-#filmiinfo {
-    margin: 1em 0;
+.filmiinfoblokk {
+	margin: 0;
     float: right;
     display: inline-block;
     text-align: center;
     font-size: 0.9em;
-    line-height: 1.1em;
-    color: #333;
+    line-height: 1.2em;
+    color: #666;
 }
 
 
-#fotokonteiner {
+.fotokonteiner {
 	max-width: 100%;
-    max-height:  11.7em;
     display:inline-block;
 }
 
 
 
+
+.n2dalaP2ev {
+	text-align: right;
+	font-size: 4em;
+	line-height: 0.8em;
+	margin: 0;
+}
+
+.aeg {
+	margin: 0;
+}
+
+.filmiinfo {
+	padding: 1em 0.2em
+}
+
+.kuup2ev {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	line-height: 1.3em;
+}
