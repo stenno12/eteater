@@ -4,6 +4,8 @@
     margin: 0;
 }
 
+
+
 html {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -109,19 +111,22 @@ li a:hover:not(.active) {
 
 /* sisu */
 
+h1, h2, h3, h4 {
+    font-family: 'Roboto Slab', serif;
+}
 h1 {
     margin: 0.5em 0;
+    font-size: 4em;
+    line-height: 0.9em
 }
-
-#fotokonteiner {
-    margin: auto;
-    position: relative;
+.film {
+    margin: 5em 0;
 }
 
 .filmifoto {
-    max-width: 100%;
-    margin: auto;
     position: relative;
+    max-height: 11.3em;
+    max-width: 100%;
 }
 
 figcaption {
@@ -133,23 +138,70 @@ figcaption {
 }
 
 h3 {
-    text-align: center;
-
-}
-
-#film {
-    position: relative;
-}
-
-span {
-    position:relative;
-}
-
-
-.pealkiri {
     font-size: 1.2em;
-    margin: 1.0em;
-    padding: 0.5em;
+    text-align: justify;
+    display: inline-block;
+}
+.pildipealne {
     display: inline-block;
     background-color: #fff;
 }
+h3.pildipealne{
+    margin: 16px 16px 0 16px;
+    padding: 0.3em;
+}
+
+p.pildipealne{
+    font-size: 0.8em;
+    margin: 0px 16px 16px 16px;
+    padding: 0em 0.3em 0.3em;
+}
+
+
+h4 {
+    font-size: 1.4em;
+    text-align: center
+}
+
+#kuup2evNr {
+    font-size: 4em;
+    line-height: 0.8em;
+}
+
+#kuup2ev {
+    text-align: center;
+}
+
+#kp2ev {
+    margin: 0;
+    padding: 0 1em;
+    max-width: 100%;
+    height: 15.0em;
+    display: block;
+}
+
+
+
+#filmikirjeldus {
+    max-height: 12em;
+    text-overflow: "...";
+    margin-top: -0.3em;
+    display:inline-block;
+}
+
+#filmiinfo {
+    margin: 1em 0;
+    float: right;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.1em;
+    color: #333;
+}
+
+
+#fotokonteiner {
+    height: 11.7em;
+    display:inline-block;
+}
+
