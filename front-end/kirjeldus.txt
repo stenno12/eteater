@@ -1,0 +1,11 @@
+Kõigepealt tuleks muuta index.html index.php-ks, et saaks html-ga vaheldumisi php-d kasutada
+Iga lehe puhul tuleks esimese asjana kasutada <?php include_once("languages/lang.php"); ?>
+keele vahetamiseks kasutada linki index.php?lang=en/index.php?lang=et
+igale poole kus tekst on on vaja panna teksti asemele <?php echo htmlspecialchars($lang['teksti_nimi']); ?>
+ja tekst kirjutada failidesse lang_et.php ja lang_en.php
+
+Lisasin ka index.php, kus sarjade menüüle mitkekeelsus lisatud, sealt peaks näha olema mida umbes tegema peab
+Oma arvutis on midagi vaja ka et php-d jooksutada nt. xampp ajab asja ära ma ei tea ka kui hästi
+sa php-d tunned, aga siin seletatakse päris hästi: https://www.youtube.com/watch?v=iCUV3iv9xOs
+Katsun homme ka skype sees hoida, kui äkki miski ei toimi
+
