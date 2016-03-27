@@ -13,7 +13,6 @@
 		<li><a class="active" href="index.php"><b>FILMID</b></a></li>
 		<li><a href="kinokava.html"><b>KINOKAVA</b></a></li>
 		<li><a href="info.html"><b>INFO</b></a></li>
-		<li><a href="test.html"><b>TEST</b></a></li>
 	</ul>
 	
 	<div class="content">
@@ -30,7 +29,7 @@ try {
 	$result = $stmt->fetchAll();
 	
 	foreach ($result as $value){
-		echo '<img class="pic2" src="' . $value['PictureLocation'] . '">';
+		echo '<img class="pic2" alt="pilt" src="' . $value['PictureLocation'] . '">';
 		echo $value["Name"] . "<br><br>";
 		echo $value["DescriptionData"] . "<br><br>";
 		echo '<div class="divclear"></div>';
