@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php include "ncoding.php"; ?>
+<?php //include "ncoding.php"; ?>
 <html>
 <body>
 <?php
@@ -10,7 +10,7 @@ $fname = htmlspecialchars($fname);
 $lname = htmlspecialchars($lname);
 
 try {
-	$conn = new PDO("sqlsrv:server = tcp:eteater.database.windows.net,1433; Database = eteaterdb", "stenno", "MjKpkslpn4s");
+	$conn = new PDO("sqlsrv:server = tcp:dsdbserver.database.windows.net,1433; Database = DSDB", "stenno", "MjKpkslpn4s");
 	$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 	
 	$stmt2 = $conn->prepare("SELECT * FROM Devs WHERE FirstName = :firstname AND LastName = :lastname COLLATE Latin1_General_CS_AS");

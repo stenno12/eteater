@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<?php include "ncoding.php"; ?>
+<?php //include "ncoding.php"; ?>
+<html>
 <head>
+	<meta charset="UTF-8">
 	<title>Testleht</title>
 	<link rel="stylesheet" type="text/css" href="stiil.css">
-	<script src="ijscript.js"></script>
 </head>
 <body>
 
@@ -19,7 +20,7 @@
 	
 <?php
 try {
-	$conn = new PDO("sqlsrv:server = tcp:eteater.database.windows.net,1433; Database = eteaterdb", "stenno", "MjKpkslpn4s");
+	$conn = new PDO("sqlsrv:server = tcp:dsdbserver.database.windows.net,1433; Database = DSDB", "stenno", "MjKpkslpn4s");
 	$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 	
 	$stmt = $conn->prepare("SELECT * FROM TestFilm");
@@ -29,13 +30,11 @@ try {
 	$result = $stmt->fetchAll();
 	
 	foreach ($result as $value){
-		echo "<div>";
 		echo '<img class="pic2" src="' . $value['PictureLocation'] . '">';
 		echo $value["Name"] . "<br><br>";
 		echo $value["DescriptionData"] . "<br><br>";
 		echo '<div class="divclear"></div>';
 		echo $value["DescriptionLong"];
-		echo "</div>";
 		echo "<hr>";
 	}
 
@@ -49,3 +48,4 @@ catch(PDOException $e){
 
 	</div>
 </body>
+</html>
