@@ -55,15 +55,15 @@
 			        <div class="row">
 			        	
 			            <div id="sisukava" class="col-xs-12 col-sm-10 col-md-9">
-			                <h1>Varsti kinos</h1>
-			            </div>
+			                <h1>Varsti kinos</h1> 
+			            </div><br></br><br></br><br></br>
 			            <div id="parembox" class="col-xs-12 col-sm-2 col-md-3">
 			                <h2>Seansid</h2> <br></br>
 			            </div>
 
 			            <div class="content">
 			            	<!-- selleks peab parem moodus olema... -->
-			            	<br><br><br><br>e
+			            	<br><br><br><br>
 			        		<?php
 							try {
 								$conn = new PDO("sqlsrv:server = tcp:dsdbserver.database.windows.net,1433; Database = DSDB", "stenno", "MjKpkslpn4s");
