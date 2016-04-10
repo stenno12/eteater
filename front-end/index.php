@@ -23,9 +23,12 @@
 			    <body>
 			        <header>
 						<menu>
+							<script src="info_script.js"></script>
 							<div class="language">
 								<span class="keelevalik"><a href="index.php?lang=et">ET</a></span>
 								<span class="keelevalik"><a href="index.php?lang=en">EN</a></span>
+								<div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState()"></div>
+
 							</div>
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -38,7 +41,8 @@
 			            	</div>
 			                <div id="navbar" class="navbar-collapse collapse">
 								<ul class="navigeering nav navbar-nav">
-									<li><a href="#kava" class="active"><?php echo $lang['menu_schedule'] ?></a></li>
+									<li><a href="index.php" class="active"><?php echo $lang['menu_schedule'] ?></a></li>
+									<li><a href="seances.php"><?php echo $lang['menu_seances'] ?></a></li>
 									<li><a href="#sarjad"><?php echo $lang['menu_series'] ?></a></li>
 									<li><a href="#kinost"><?php echo $lang['menu_about'] ?></a></li>
 									<li><a href="#arhiiv"><?php echo $lang['menu_archive'] ?></a></li>

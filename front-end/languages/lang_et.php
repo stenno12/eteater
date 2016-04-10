@@ -2,6 +2,7 @@
 	global $lang;
 	
 	$lang['menu_schedule'] = 'KAVA';
+	$lang['menu_seances'] = 'SEANSID';
 	$lang['menu_series'] = 'SARJAD';
 	$lang['menu_about'] = 'KINOST';
 	$lang['menu_archive'] = 'ARHIIV';

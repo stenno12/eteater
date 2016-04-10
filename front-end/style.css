@@ -232,8 +232,8 @@ h4 {
 }
 
 .language {
-    /*pole kindel, kas nii on hea thea
-    transform: translate(40px,-25px);*/
+    
+    transform: translate(40px,-20px);
     float: right;
 }
 
