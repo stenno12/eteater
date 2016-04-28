@@ -1,6 +1,5 @@
 <?php include "ncoding.php"; ?>
-<?php include_once("languages/lang.php"); ?>
-
+<?php include "languages/lang.php"; ?>
 <!doctype html>
 <html lang="et">
     <head>
@@ -19,17 +18,16 @@
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     	<![endif]-->
-    	<script src="kinokava_script.js"></script>
+    	<script src="http://maps.googleapis.com/maps/api/js"></script>
+
     </head>
     <body>
         <header>
 			<menu>
-				<script src="info_script.js"></script>
 				<div class="language">
-					<span class="keelevalik"><a href="seances.php?lang=et">ET</a></span>
-					<span class="keelevalik"><a href="seances.php?lang=en">EN</a></span>
+					<span class="keelevalik"><a href="index.php?lang=et">ET</a></span>
+					<span class="keelevalik"><a href="index.php?lang=en">EN</a></span>
 					<div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="true" onlogin="checkLoginState()"></div>
-
 				</div>
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -43,31 +41,51 @@
                 <div id="navbar" class="navbar-collapse collapse">
 					<ul class="navigeering nav navbar-nav">
 						<li><a href="index.php"><?php echo $lang['menu_schedule'] ?></a></li>
-						<li><a href="seances.php" class="active"><?php echo $lang['menu_seances'] ?></a></li>
-						<li><a href="#sarjad"><?php echo $lang['menu_series'] ?></a></li>
-						<li><a href="about.php"><?php echo $lang['menu_about'] ?></a></li>
+						<li><a href="seances.php"><?php echo $lang['menu_seances'] ?></a></li>
+						<li><a href="about.php" class="active"><?php echo $lang['menu_about'] ?></a></li>
 						<li><a href="#arhiiv"><?php echo $lang['menu_archive'] ?></a></li>
 						<li><a href="#kontakt"><?php echo $lang['menu_contact'] ?></a></li>
 						<li class="social_btn"><a href="https://www.facebook.com/elektriteater"><img src="fb.png" alt="fb" /></a></li>
 						<li class="social_btn"><a href="https://www.instagram.com/elektriteater/"><img src="ig.png" alt="ig" /></a></li>
 					</ul>
                 </div>
+
             </menu>
-
-           
         </header>
-        
-		<div class="content">
+        <div class="row">
+            <div id="Asukoht" class="col-xs-12 col-sm-10 col-md-9">
+                <h1>Asukoht</h1>
+
+                <script>
+				function initialize(){
+					var mapProp = {
+						center : new google.maps.LatLng(58.383895,26.721828),
+						zoom : 15,
+						mapTypeId : google.maps.MapTypeId.ROADMAP
+					};
+					var myMap = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+					var myPlace = {
+						location : mapProp.center,
+						placeId : "ChIJec0NYeY260YRjgFHF9_8vfA"
+					};
+					var marker = new google.maps.Marker({
+						place : myPlace,
+						map : myMap,
+						label : "E"
+					});
+				}
+				google.maps.event.addDomListener(window, "load", initialize)
+				</script>
 	
-			Vali kuupäev <select id="date1"></select>
-			
-			<button onclick="getFilms()">Otsi</button>
-			<br>
-			<p id="ddm_demo"></p>
+				<div id="googleMap" style="width:500px;height:380px;"></div>
+				
+            </div>
 
-		</div>
-
-         <script src="kinokava_script_2.js"></script>
+            <div id="parembox" class="col-xs-12 col-sm-2 col-md-3">
+                <h2>Seansid</h2>
+                <p>See menüü siin on jõhkralt pooleli, kunagi järgmine kord täieneb</p>
+            </div>
+        </div>
         <footer>
         </footer>
     </body>

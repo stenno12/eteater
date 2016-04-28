@@ -40,7 +40,8 @@
 					<ul class="navigeering nav navbar-nav">
 						<li><a href="index.php" class="active"><?php echo $lang['menu_schedule'] ?></a></li>
 						<li><a href="seances.php"><?php echo $lang['menu_seances'] ?></a></li>
-						<li><a href="#kinost"><?php echo $lang['menu_about'] ?></a></li>
+						<li><a href="#series"><?php echo $lang['menu_series'] ?></a></li>
+						<li><a href="about.php"><?php echo $lang['menu_about'] ?></a></li>
 						<li><a href="#arhiiv"><?php echo $lang['menu_archive'] ?></a></li>
 						<li><a href="#kontakt"><?php echo $lang['menu_contact'] ?></a></li>
 						<li class="social_btn"><a href="https://www.facebook.com/elektriteater"><img src="fb.png" alt="fb" /></a></li>
